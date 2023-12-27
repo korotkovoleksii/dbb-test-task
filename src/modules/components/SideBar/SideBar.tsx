@@ -19,9 +19,9 @@ const SideBar = () => {
       <img
         src={DropboxLogo}
         alt="DropboxLogo"
-        className="w-7 h-7 ml-5 mt-[30px]"
+        className="w-7 h-7 ml-[22px] mt-[25px]"
       />
-      <div className="mt-[30px]">
+      <div className="mt-[26px]">
         {sideItems.map((item, index) => (
           <SideBarItem key={index} {...item} />
         ))}
