@@ -1,13 +1,15 @@
-import { Button } from "@/modules/components/ui/button";
+import SideBar from "@/modules/components/SideBar/SideBar";
+import TopActionBar from "@/modules/components/TopActionBar/TopActionBar";
 
 const App = () => {
   return (
-    <>
-      <div>
-        <Button>button</Button>
-        <p>Hello</p>
+    <div className="flex gap-10">
+      <SideBar />
+      <div className="pt-4">
+        <TopActionBar />
+        <div className="w-10 h-10 bg-red-500"></div>
       </div>
-    </>
+    </div>
   );
 };
 
