@@ -10,7 +10,7 @@ const SideBarItem = ({
   title,
 }: ISideBarItemProp) => {
   return (
-    <div className="flex pl-[16px] h-[40px] pt-2 pb-2 gap-[15px] hover:bg-[#EBE9E5] items-center">
+    <div className="flex pl-[16px] h-[40px] pt-2 pb-2 gap-[12px] hover:bg-bgdropbox items-center">
       <div className="w-[20px] h-[20px] flex justify-center items-center text-muted-foreground">
         {icon}
       </div>
