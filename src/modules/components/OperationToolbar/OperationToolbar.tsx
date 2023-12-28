@@ -59,8 +59,9 @@ const OperationToolbar = () => {
 
   return (
     <div className="mt-4 flex gap-[16px]">
-      {dataItemToolbar.map((item) => (
+      {dataItemToolbar.map((item, index) => (
         <Button
+          key={index}
           variant={item.primary ? "toolBarItemPrimary" : "toolBarItemOrdinary"}
           size={"toolbarItemSize"}
           onClick={item.onClick}
