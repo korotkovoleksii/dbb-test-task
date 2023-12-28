@@ -41,19 +41,19 @@ const OperationToolbar = () => {
       title: "Записати",
       icon: <Record2 />,
       primary: false,
-      handleNotImplemented,
+      onClick: handleNotImplemented,
     },
     {
       title: "Редагувати PDF",
       icon: <Pen />,
       primary: false,
-      handleNotImplemented,
+      onClick: handleNotImplemented,
     },
     {
       title: "Отримати підпис",
       icon: <FileArrowDown />,
       primary: false,
-      handleNotImplemented,
+      onClick: handleNotImplemented,
     },
   ];
 
