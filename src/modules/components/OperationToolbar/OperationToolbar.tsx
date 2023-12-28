@@ -12,66 +12,48 @@ import { useToast } from "../ui/use-toast";
 const OperationToolbar = () => {
   const { toast } = useToast();
 
+  const handleNotImplemented = () => {
+    toast({
+      title: "Not implemented ",
+    });
+  };
+
   const dataItemToolbar = [
     {
       title: "Створити",
       icon: <Plus />,
       primary: true,
-      onClick: () => {
-        toast({
-          title: "Not implemented ",
-        });
-      },
+      onClick: handleNotImplemented,
     },
     {
       title: "Передати",
       icon: <ArrowBarUp />,
       primary: false,
-      onClick: () => {
-        toast({
-          title: "Not implemented ",
-        });
-      },
+      onClick: handleNotImplemented,
     },
     {
       title: "Створити папку",
       icon: <FolderPlus />,
       primary: false,
-      onClick: () => {
-        toast({
-          title: "Not implemented ",
-        });
-      },
+      onClick: handleNotImplemented,
     },
     {
       title: "Записати",
       icon: <Record2 />,
       primary: false,
-      onClick: () => {
-        toast({
-          title: "Not implemented ",
-        });
-      },
+      handleNotImplemented,
     },
     {
       title: "Редагувати PDF",
       icon: <Pen />,
       primary: false,
-      onClick: () => {
-        toast({
-          title: "Not implemented ",
-        });
-      },
+      handleNotImplemented,
     },
     {
       title: "Отримати підпис",
       icon: <FileArrowDown />,
       primary: false,
-      onClick: () => {
-        toast({
-          title: "Not implemented ",
-        });
-      },
+      handleNotImplemented,
     },
   ];
 
