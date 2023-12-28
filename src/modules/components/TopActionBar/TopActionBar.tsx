@@ -54,15 +54,15 @@ const TopActionBar = () => {
         >
           <QuestionCircle className="h-4 w-4" />
         </Button>
-        {/* <Button
+        <Button
           variant={"ghost"}
           size="icon"
           className="w-8 h-8 rounded-none hover:bg-bgdropbox"
           onClick={handleNotImplemented}
         >
           <Bell className="h-4 w-4" />
-        </Button> */}
-        {/* <Button
+        </Button>
+        <Button
           variant={"ghost"}
           size="icon"
           className="w-8 h-8 rounded-none hover:bg-bgdropbox"
@@ -71,7 +71,7 @@ const TopActionBar = () => {
           <Avatar className="size-6">
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
-        </Button> */}
+        </Button>
       </div>
     </div>
   );
