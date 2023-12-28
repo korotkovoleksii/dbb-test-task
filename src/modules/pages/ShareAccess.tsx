@@ -1,5 +1,9 @@
 const ShareAccess = () => {
-  return <div>ShareAccess</div>;
+  return (
+    <div>
+      <p>Not Implemented</p>
+    </div>
+  );
 };
 
 export default ShareAccess;

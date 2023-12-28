@@ -1,5 +1,9 @@
 const Signature = () => {
-  return <div>Signature</div>;
+  return (
+    <div>
+      <p>Not Implemented</p>
+    </div>
+  );
 };
 
 export default Signature;

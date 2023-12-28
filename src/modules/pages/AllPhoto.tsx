@@ -1,5 +1,9 @@
 const AllPhoto = () => {
-  return <div>AllPhoto</div>;
+  return (
+    <div>
+      <p>Not Implemented</p>
+    </div>
+  );
 };
 
 export default AllPhoto;
