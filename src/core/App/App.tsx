@@ -16,7 +16,6 @@ const App = () => {
         <SideBar />
         <div className="pt-4">
           <TopActionBar />
-          <OperationToolbar />
           <Routes>
             <Route path={Endpoints.AllFiles} element={<AllFiles />} />
             <Route path={Endpoints.AllPhoto} element={<AllPhoto />} />

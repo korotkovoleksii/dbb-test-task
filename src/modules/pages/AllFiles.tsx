@@ -1,5 +1,11 @@
+import OperationToolbar from "../components/OperationToolbar/OperationToolbar";
+
 const AllFiles = () => {
-  return <div>AllFiles</div>;
+  return (
+    <div>
+      <OperationToolbar />
+    </div>
+  );
 };
 
 export default AllFiles;
