@@ -5,12 +5,17 @@ import { Photo } from "styled-icons/material-outlined";
 import { Signature } from "styled-icons/fa-solid";
 import { PeopleOutline } from "styled-icons/material";
 import { Separator } from "@/modules/components/ui/separator";
+import Endpoints from "@/shared/constants/endpoints";
 
 const sideItems = [
-  { icon: <Files />, title: "Усі файли" },
-  { icon: <Photo />, title: "Фотографії" },
-  { icon: <PeopleOutline />, title: "Спільний доступ" },
-  { icon: <Signature />, title: "Підписи" },
+  { icon: <Files />, title: "Усі файли", endpoint: Endpoints.AllFiles },
+  { icon: <Photo />, title: "Фотографії", endpoint: Endpoints.AllPhoto },
+  {
+    icon: <PeopleOutline />,
+    title: "Спільний доступ",
+    endpoint: Endpoints.ShareAccess,
+  },
+  { icon: <Signature />, title: "Підписи", endpoint: Endpoints.Signature },
 ];
 
 const SideBar = () => {
