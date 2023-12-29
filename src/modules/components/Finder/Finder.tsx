@@ -6,7 +6,7 @@ import Endpoints from "@/shared/constants/endpoints";
 
 const Finder = () => {
   const [dataFolders, setDataFolders] = useState<files.ListFolderResult>();
-
+  const [isLoading, setIsLoading] = useState(true);
   const accessToken = import.meta.env.VITE_TOKEN;
   const sharedLink = import.meta.env.VITE_SHARED_LINK;
   const { pathname } = useLocation();
@@ -27,6 +27,7 @@ const Finder = () => {
       })
       .then((res) => {
         setDataFolders(res.result);
+        setIsLoading(false);
       })
       .catch(function (error) {
         console.error(error);
@@ -35,10 +36,16 @@ const Finder = () => {
 
   return (
     <div>
-      {dataFolders && dataFolders.entries.length > 0 ? (
-        <ContentArea data={dataFolders} />
+      {isLoading ? (
+        <div>Loading...</div>
       ) : (
-        <div>Empty Folder</div>
+        <>
+          {dataFolders && dataFolders.entries.length > 0 ? (
+            <ContentArea data={dataFolders} />
+          ) : (
+            <div>Empty Folder</div>
+          )}
+        </>
       )}
     </div>
   );
