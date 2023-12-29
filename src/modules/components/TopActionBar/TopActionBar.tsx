@@ -13,11 +13,13 @@ import { useToast } from "../ui/use-toast";
 
 const TopActionBar = () => {
   const { toast } = useToast();
+
   const handleNotImplemented = () => {
     toast({
       title: "Not implemented ",
     });
   };
+
   return (
     <div className="relative flex flex-row items-center">
       <div className="w-[20px] absolute top-[50%] left-[25px] transform -translate-x-1/2 -translate-y-1/2">

@@ -9,7 +9,7 @@ const ContentArea = ({ data }: { data: files.ListFolderResult }) => {
           key={index}
           name={item.name}
           tag={item[".tag"]}
-          pathLower={item.path_lower}
+          pathLower={item.path_lower || ""}
         />
       ))}
     </div>

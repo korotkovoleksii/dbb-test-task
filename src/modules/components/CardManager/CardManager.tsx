@@ -1,5 +1,4 @@
 import { Card, CardContent, CardFooter } from "@/modules/components/ui/card";
-
 import { Folder } from "styled-icons/boxicons-solid";
 import { File } from "styled-icons/boxicons-regular";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -22,9 +21,11 @@ const CardManager = ({
       setClicked(true);
     }
   };
+
   const handelOnClickFile = () => {
     window.open(`https://www.dropbox.com/preview${pathLower}`);
   };
+
   const cardFooter =
     tag === "folder" ? (
       <CardFooter className="mt-1 border-none  h-[64px] flex content-center gap-2 p-0 pl-2">
@@ -44,6 +45,7 @@ const CardManager = ({
         </section>
       </CardFooter>
     );
+
   return (
     <Card
       className="w-[224px]  rounded-none border-none relative shadow-none flex flex-col"
