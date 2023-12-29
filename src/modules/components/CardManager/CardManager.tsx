@@ -1,23 +1,17 @@
 import { Card, CardContent, CardFooter } from "@/modules/components/ui/card";
 
 import { Folder } from "styled-icons/boxicons-solid";
-import { File, Star } from "styled-icons/boxicons-regular";
+import { File } from "styled-icons/boxicons-regular";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
-
-interface IFolderCardProp {
-  name?: string;
-  size?: number;
-  tag?: string;
-  pathLower?: string;
-}
+import { ICardManagerProp } from "@/shared/interfaces/CardManagerProp.interface";
 
 const CardManager = ({
   name = "folder1",
   tag = "folder",
   pathLower = "name.txt",
   size = 256,
-}: IFolderCardProp) => {
+}: ICardManagerProp) => {
   const navigate = useNavigate();
   const { pathname } = useLocation();
   const [clicked, setClicked] = useState(false);
