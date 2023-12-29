@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# Test Task React Developer DBB Software
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+React Web Application of basic file explorer should be provided as a result of this assignment. The UI part should consist of the toolbar and content area. There can be any number of buttons on the toolbar; any non‐functional buttons should be “stubs” and give users a “Not implemented” message when clicked.
+It is required to implement the navigation part of the file explorer, i.e., open files and sub-folders.
+It is required to read data from a remote source via REST service.
+Ideally, a document list from a public Dropbox folder (via Server app) would be considered a first-class application.
+Please fully document your solution and ensure that it will build easily on the reviewer’s PC. If any extra steps to compile are required, please list these in a separate readme.
+You can visit https://www.dropbox.com/home to look for an example.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation and Usage
 
-## Expanding the ESLint configuration
+1. Clone the repository.
+2. Install dependencies with `npm install`.
+3. Create .env file with
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+VITE_TOKEN=yourTokenFromDropBoxDevConsole
+VITE_SHARED_LINK=https://www.dropbox.com/scl/fo/linkToPublicFolder
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+4. Run the app with `npm run dev`.
+
+## Technologies Used
+
+- React
+- TypeScript
+- Vite
+- ui.shadcn
+- DropBox SDK
+- tailwindcss
+
+## Contributors
+
+- Oleksii Korotkov
