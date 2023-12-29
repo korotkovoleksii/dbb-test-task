@@ -1,5 +1,5 @@
 enum Endpoints {
-  AllFiles = "/",
+  AllFiles = "/home",
   AllPhoto = "/all-photo",
   ShareAccess = "/share-access",
   Signature = "/signature",
