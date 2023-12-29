@@ -20,7 +20,7 @@ const sideItems = [
 
 const SideBar = () => {
   return (
-    <div className="w-[240px] h-[100vh] bg-[#F7F5F1] overflow-auto  border-r-[1px]">
+    <div className="min-w-[240px] min-h-screen bg-[#F7F5F1] overflow-auto  border-r-[1px]">
       <img
         src={DropboxLogo}
         alt="DropboxLogo"
