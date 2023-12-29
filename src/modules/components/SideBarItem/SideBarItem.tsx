@@ -1,11 +1,6 @@
+import { ISideBarItemProp } from "@/shared/interfaces/SideBarProp.interface";
 import { Link, useLocation } from "react-router-dom";
 import { DisabledByDefault } from "styled-icons/material";
-
-interface ISideBarItemProp {
-  icon: any;
-  title: string;
-  endpoint: string;
-}
 
 const SideBarItem = ({
   icon = <DisabledByDefault />,
@@ -13,8 +8,6 @@ const SideBarItem = ({
   endpoint,
 }: ISideBarItemProp) => {
   const location = useLocation();
-  console.log(location.pathname);
-
   return (
     <Link to={endpoint}>
       <div
